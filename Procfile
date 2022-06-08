@@ -1,0 +1,1 @@
+web: gunicorn gift_registry_backend.wsgi --log-file -
