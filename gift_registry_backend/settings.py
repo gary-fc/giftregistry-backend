@@ -96,11 +96,11 @@ WSGI_APPLICATION = 'gift_registry_backend.wsgi.application'
 
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.postgresql_psycopg2',
-        'NAME': 'gift_registry_backend',
-        'USER': 'root',
-        'PASSWORD': '',
-        'HOST': 'localhost',
+        'ENGINE': 'django.db.backends.mysql',
+        'NAME': 'heroku_7bad178be65df1d',
+        'USER': 'b3a213552ece24',
+        'PASSWORD': 'bfd06889',
+        'HOST': 'us-cdbr-east-05.cleardb.net',
         'PORT': '3306',
         'OPTIONS': {
             'sql_mode': 'traditional'
@@ -163,6 +163,3 @@ MEDIA_URL = '/media/'
 MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
 
 STATICFILES_STORAGE = 'whitenoise.storage.CompressedManifestStaticFilesStorage'
-
-import django_heroku
-django_heroku.settings(locals())
